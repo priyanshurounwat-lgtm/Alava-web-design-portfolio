@@ -32,9 +32,39 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ALAVA Web Designers",
+  "url": "https://alavadesign.agency",
+  "logo": "https://alavadesign.agency/founder-avatar.png",
+  "image": "https://alavadesign.agency/coming-soon.png",
+  "description": "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vadodara",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "22.307159",
+    "longitude": "73.181220"
+  },
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.linkedin.com/company/alava-design",
+    "https://www.instagram.com/alavadesign.agency"
+  ]
+};
+
 function Index() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <Preloader />
       <div className="min-h-screen bg-black text-white">
         <SiteHeader />
