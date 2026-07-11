@@ -19,6 +19,11 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands." },
       { property: "og:title", content: "Alava Web Designers — Engineering Digital Scale" },
       { property: "og:description", content: "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands." },
+      { property: "og:image", content: "https://www.alavadesign.agency/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/png" },
+      { name: "twitter:image", content: "https://www.alavadesign.agency/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,7 +43,7 @@ const schemaData = {
   "name": "ALAVA Web Designers",
   "url": "https://alavadesign.agency",
   "logo": "https://alavadesign.agency/founder-avatar.png",
-  "image": "https://alavadesign.agency/coming-soon.png",
+  "image": "https://alavadesign.agency/og-image.png",
   "description": "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
   "address": {
     "@type": "PostalAddress",
