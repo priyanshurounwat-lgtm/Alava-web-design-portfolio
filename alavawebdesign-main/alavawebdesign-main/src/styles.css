@@ -39,20 +39,41 @@
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
   @keyframes pulse-dot {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 oklch(0.78 0.18 145 / 0.6); }
-    50% { opacity: 0.6; box-shadow: 0 0 0 6px oklch(0.78 0.18 145 / 0); }
+    0%,
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 0 0 oklch(0.78 0.18 145 / 0.6);
+    }
+    50% {
+      opacity: 0.6;
+      box-shadow: 0 0 0 6px oklch(0.78 0.18 145 / 0);
+    }
   }
   @keyframes line-track {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
   @keyframes fade-up {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -80,31 +101,61 @@
   --signal: oklch(0.78 0.18 145);
 }
 
-.dark { color-scheme: dark; }
+.dark {
+  color-scheme: dark;
+}
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html, body {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
     background-color: #000;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  ::selection { background: oklch(0.78 0.18 145 / 0.4); color: white; }
+  ::selection {
+    background: oklch(0.78 0.18 145 / 0.4);
+    color: white;
+  }
 }
 
-@utility font-mono { font-family: var(--font-mono); }
-@utility font-display { font-family: var(--font-display); letter-spacing: -0.02em; }
+@utility font-mono {
+  font-family: var(--font-mono);
+}
+@utility font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
 
 @utility magnetic-tile {
-  transition: border-color 400ms ease, background-color 400ms ease, letter-spacing 400ms ease, transform 400ms ease;
+  transition:
+    border-color 400ms ease,
+    background-color 400ms ease,
+    letter-spacing 400ms ease,
+    transform 400ms ease;
 }
-.magnetic-tile:hover { border-color: oklch(1 0 0 / 40%) !important; background-color: oklch(1 0 0 / 0.03); }
-.magnetic-tile:hover h3, .magnetic-tile:hover h4 { letter-spacing: 0.01em; }
+.magnetic-tile:hover {
+  border-color: oklch(1 0 0 / 40%) !important;
+  background-color: oklch(1 0 0 / 0.03);
+}
+.magnetic-tile:hover h3,
+.magnetic-tile:hover h4 {
+  letter-spacing: 0.01em;
+}
 
 @keyframes amber-pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 oklch(0.78 0.18 65 / 0.6); }
-  50% { opacity: 0.7; box-shadow: 0 0 0 8px oklch(0.78 0.18 65 / 0); }
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 oklch(0.78 0.18 65 / 0.6);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 8px oklch(0.78 0.18 65 / 0);
+  }
 }
 @utility amber-dot {
   background: oklch(0.78 0.18 65);
@@ -112,8 +163,12 @@
 }
 
 @keyframes mini-loader {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 @utility mini-loader-bar {
   animation: mini-loader 2.4s ease-in-out infinite;

@@ -5,26 +5,26 @@ const archives = [
     id: "V.01",
     title: "E-COMMERCE CORE PROTOCOL",
     stack: "React • Shopify API",
-    status: "DEPLOYED // LIVE"
+    status: "DEPLOYED // LIVE",
   },
   {
     id: "V.02",
     title: "MINIMALIST INTERACTIVE GRID LABS",
     stack: "Figma • Framer Motion",
-    status: "EXPERIMENTAL"
+    status: "EXPERIMENTAL",
   },
   {
     id: "V.03",
     title: "HIGHSPEED MEAN STACK BOILERPLATE",
     stack: "MongoDB • Node.js",
-    status: "SOURCE // REPO"
+    status: "SOURCE // REPO",
   },
   {
     id: "V.04",
     title: "AUDIO ELECTRONICS PROMO LANDING",
     stack: "HTML5 • Tailwind CSS",
-    status: "PRODUCTION"
-  }
+    status: "PRODUCTION",
+  },
 ];
 
 export function ArchiveVault() {
@@ -41,7 +41,7 @@ export function ArchiveVault() {
           animation: scan 4s linear infinite;
         }
       `}</style>
-      
+
       <div className="px-6 md:px-10 py-20 md:py-28 max-w-[1600px] mx-auto">
         <div className="flex items-center gap-3 mb-12">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.8)]" />
@@ -82,7 +82,7 @@ export function ArchiveVault() {
                   <motion.div
                     variants={{
                       initial: { x: 0, color: "rgba(255,255,255,0.4)" },
-                      hover: { x: 8, color: "rgba(255,255,255,1)" }
+                      hover: { x: 8, color: "rgba(255,255,255,1)" },
                     }}
                     transition={{ type: "spring", stiffness: 150, damping: 15 }}
                     className="font-mono text-[10px] uppercase tracking-widest whitespace-nowrap mt-2 lg:mt-0"

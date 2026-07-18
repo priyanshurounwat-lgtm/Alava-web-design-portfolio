@@ -24,10 +24,7 @@ function AnimatedLine({
   return (
     <span className={`inline-flex flex-wrap justify-center ${muted ? "text-white/40" : ""}`}>
       {words.map((w, i) => (
-        <span
-          key={i}
-          className="overflow-hidden inline-block align-bottom pb-[0.12em] mr-[0.25em]"
-        >
+        <span key={i} className="overflow-hidden inline-block align-bottom pb-[0.12em] mr-[0.25em]">
           <motion.span
             className="inline-block will-change-transform"
             initial={{ y: 40, opacity: 0 }}
@@ -129,8 +126,10 @@ export function Hero() {
     };
   }, [mouseX, mouseY]);
 
-  const glowBg = useTransform([smoothX, smoothY], ([x, y]) =>
-    `radial-gradient(600px circle at ${x}px ${y}px, rgba(148,163,184,0.10), rgba(255,255,255,0.04) 25%, transparent 60%)`
+  const glowBg = useTransform(
+    [smoothX, smoothY],
+    ([x, y]) =>
+      `radial-gradient(600px circle at ${x}px ${y}px, rgba(148,163,184,0.10), rgba(255,255,255,0.04) 25%, transparent 60%)`,
   );
 
   return (
@@ -145,8 +144,8 @@ export function Hero() {
       <div className="relative z-10 px-6 md:px-10 pt-20 md:pt-32 pb-16 md:pb-24 max-w-[1600px] mx-auto">
         <div className="flex items-center gap-4 font-mono text-xs uppercase tracking-widest text-white/40 mb-10 animate-fade-up">
           <span className="h-px w-10 bg-white/30" />
-          <span>​</span>
-          <span>​</span>
+          <span>[ DESIGN STUDIO ]</span>
+          <span>[ EST. 2026 ]</span>
         </div>
 
         <h1 className="font-display font-bold uppercase text-[12vw] md:text-[8.5vw] leading-[1.02] tracking-[-0.01em] text-center">
@@ -198,7 +197,8 @@ export function Hero() {
 
         <div className="mt-12 grid md:grid-cols-2 gap-10 items-end">
           <p className="font-mono text-sm md:text-base text-white/60 leading-relaxed max-w-xl uppercase tracking-wide">
-            Premium UI/UX layout design, radical Framer interactions, and production-grade Webflow core deployment for global standard brands.
+            Premium UI/UX layout design, radical Framer interactions, and production-grade Webflow
+            core deployment for global standard brands.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:justify-end">
             <a
@@ -226,19 +226,38 @@ export function Hero() {
             <span className="h-2 w-2 rounded-full bg-white/30" />
             <span className="h-2 w-2 rounded-full bg-white/30" />
           </div>
-          <span className="font-mono text-[9px] uppercase tracking-widest text-white/40">engine.ts</span>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-white/40">
+            engine.ts
+          </span>
         </div>
         <pre className="font-mono text-[11px] leading-relaxed p-3 text-white/70">
-<span className="text-pink-300">const</span> <span className="text-sky-300">alavaEngine</span> <span className="text-white/50">=</span> <span className="text-white/50">()</span> <span className="text-pink-300">{'=>'}</span> <span className="text-white/50">{'{'}</span>
-{"\n  "}<span className="text-emerald-300">deploy</span><span className="text-white/50">:</span> <span className="text-amber-300">true</span><span className="text-white/50">,</span>
-{"\n  "}<span className="text-emerald-300">scale</span><span className="text-white/50">:</span> <span className="text-amber-300">'global'</span>
-{"\n"}<span className="text-white/50">{'}'}</span><span className="text-white/50">;</span>
+          <span className="text-pink-300">const</span>{" "}
+          <span className="text-sky-300">alavaEngine</span> <span className="text-white/50">=</span>{" "}
+          <span className="text-white/50">()</span> <span className="text-pink-300">{"=>"}</span>{" "}
+          <span className="text-white/50">{"{"}</span>
+          {"\n  "}
+          <span className="text-emerald-300">deploy</span>
+          <span className="text-white/50">:</span> <span className="text-amber-300">true</span>
+          <span className="text-white/50">,</span>
+          {"\n  "}
+          <span className="text-emerald-300">scale</span>
+          <span className="text-white/50">:</span> <span className="text-amber-300">'global'</span>
+          {"\n"}
+          <span className="text-white/50">{"}"}</span>
+          <span className="text-white/50">;</span>
         </pre>
       </FloatingCard>
 
-      <FloatingCard className="top-[6%] right-6 xl:right-12 w-[240px]" delay={1.2} duration={7} yRange={18}>
+      <FloatingCard
+        className="top-[6%] right-6 xl:right-12 w-[240px]"
+        delay={1.2}
+        duration={7}
+        yRange={18}
+      >
         <div className="flex items-center justify-between px-3 py-2 border-b border-white/10">
-          <span className="font-mono text-[9px] uppercase tracking-widest text-white/50">Layers</span>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-white/50">
+            Layers
+          </span>
           <span className="font-mono text-[9px] text-white/30">12</span>
         </div>
         <ul className="font-mono text-[11px] p-2 space-y-1 text-white/70">
@@ -257,13 +276,22 @@ export function Hero() {
         </ul>
       </FloatingCard>
 
-      <FloatingCard className="top-[60%] left-10 xl:left-20 w-[200px]" delay={2.4} duration={5.5} yRange={12}>
+      <FloatingCard
+        className="top-[60%] left-10 xl:left-20 w-[200px]"
+        delay={2.4}
+        duration={5.5}
+        yRange={12}
+      >
         <div className="p-3">
           <div className="flex items-center justify-between mb-2">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-white/50">Performance</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-white/50">
+              Performance
+            </span>
             <span className="h-1.5 w-1.5 rounded-full bg-signal animate-pulse-dot" />
           </div>
-          <div className="font-display text-2xl text-white">99<span className="text-white/30 text-base">/100</span></div>
+          <div className="font-display text-2xl text-white">
+            99<span className="text-white/30 text-base">/100</span>
+          </div>
           <div className="mt-2 h-1 bg-white/10 rounded overflow-hidden">
             <div className="h-full w-[99%] bg-gradient-to-r from-signal to-white/70" />
           </div>

@@ -73,10 +73,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "ALAVA Web Designers | Premium Web Design & Development" },
-      { name: "description", content: "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences." },
+      {
+        name: "description",
+        content:
+          "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
+      },
       { name: "author", content: "ALAVA Web Designers" },
       { property: "og:title", content: "ALAVA Web Designers | Vadodara, India" },
-      { property: "og:description", content: "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences." },
+      {
+        property: "og:description",
+        content:
+          "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
+      },
       { property: "og:image", content: "https://www.alavadesign.agency/og-image.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
@@ -84,7 +92,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "ALAVA Web Designers" },
-      { name: "twitter:description", content: "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India." },
+      {
+        name: "twitter:description",
+        content:
+          "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India.",
+      },
       { name: "twitter:image", content: "https://www.alavadesign.agency/og-image.png" },
       { name: "referrer", content: "strict-origin-when-cross-origin" },
       { "http-equiv": "X-Content-Type-Options", content: "nosniff" },

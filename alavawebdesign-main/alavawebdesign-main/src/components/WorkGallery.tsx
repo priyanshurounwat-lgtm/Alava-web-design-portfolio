@@ -96,8 +96,12 @@ export function WorkGallery() {
 
                 <div className="relative h-full flex flex-col justify-between p-6 md:p-8 z-10">
                   <div className="flex items-center justify-between font-mono text-xs uppercase tracking-widest">
-                    <span className="text-white/80 group-hover:text-white transition-colors duration-300">INDEX: {w.idx}</span>
-                    <span className="text-white/80 group-hover:text-white transition-colors duration-300">{w.stack}</span>
+                    <span className="text-white/80 group-hover:text-white transition-colors duration-300">
+                      INDEX: {w.idx}
+                    </span>
+                    <span className="text-white/80 group-hover:text-white transition-colors duration-300">
+                      {w.stack}
+                    </span>
                   </div>
                   <div>
                     <h3 className="font-display font-bold uppercase text-3xl md:text-5xl tracking-tight text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.15)] group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-500">

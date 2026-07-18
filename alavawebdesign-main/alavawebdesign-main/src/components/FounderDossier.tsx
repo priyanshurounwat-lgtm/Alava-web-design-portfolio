@@ -43,16 +43,32 @@ export function FounderDossier() {
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 py-20 md:py-28">
           {/* Editorial labels row */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-0 mb-12">
-            <span className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <span
+              className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
               PRIYANSHU KUMAR
             </span>
-            <span className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold flex items-center gap-3" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <span
+              className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold flex items-center gap-3"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 opacity-50" fill="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
               ALAVA WEB DESIGN // DIGITAL SYSTEMS
             </span>
-            <span className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <span
+              className="px-6 py-2 border-l border-r border-black/10 text-sm uppercase tracking-[0.2em] text-[#111]/80 font-bold"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
               EST. 2024
             </span>
           </div>
@@ -62,7 +78,8 @@ export function FounderDossier() {
             className="text-center text-5xl md:text-6xl lg:text-7xl font-light leading-tight tracking-tight mb-8"
             style={{ fontFamily: "'Playfair Display', 'Georgia', 'Times New Roman', serif" }}
           >
-            Meet the Systems<br className="hidden md:block" /> Architect.
+            Meet the Systems
+            <br className="hidden md:block" /> Architect.
           </h2>
 
           {/* Thin separator */}
@@ -125,9 +142,9 @@ export function FounderDossier() {
                 </p>
 
                 <p className="text-slate-400 font-sans text-sm leading-relaxed mt-5">
-                  Engineering modern, creative web systems that balance strict
-                  backend logic with high-performance motion design. Spearheading
-                  digital product transformations at Alava Web Designers.
+                  Engineering modern, creative web systems that balance strict backend logic with
+                  high-performance motion design. Spearheading digital product transformations at
+                  Alava Web Designers.
                 </p>
 
                 {/* Contact strip */}
@@ -178,19 +195,31 @@ export function FounderDossier() {
                 <ul className="text-slate-400 font-sans text-xs space-y-2.5 leading-relaxed">
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Engineered end-to-end Figma prototypes into ultra-fast, animated native Framer and custom HTML/CSS/JavaScript digital systems.</span>
+                    <span>
+                      Engineered end-to-end Figma prototypes into ultra-fast, animated native Framer
+                      and custom HTML/CSS/JavaScript digital systems.
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Built a robust client acquisition framework specializing in high-conversion landing pages and responsive e-commerce storefronts.</span>
+                    <span>
+                      Built a robust client acquisition framework specializing in high-conversion
+                      landing pages and responsive e-commerce storefronts.
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Designed and developed responsive web interfaces using React.js, HTML5, CSS3, and JavaScript with REST API integration.</span>
+                    <span>
+                      Designed and developed responsive web interfaces using React.js, HTML5, CSS3,
+                      and JavaScript with REST API integration.
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Built reusable UI components and responsive layouts for mobile and desktop platforms with Git-based collaborative workflows.</span>
+                    <span>
+                      Built reusable UI components and responsive layouts for mobile and desktop
+                      platforms with Git-based collaborative workflows.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -210,15 +239,24 @@ export function FounderDossier() {
                 <ul className="text-slate-400 font-sans text-xs space-y-2.5 leading-relaxed">
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Developed an AI-based group travel planning application that analyzes user preferences and generates optimized travel recommendations.</span>
+                    <span>
+                      Developed an AI-based group travel planning application that analyzes user
+                      preferences and generates optimized travel recommendations.
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Implemented user authentication, group creation, conflict detection, itinerary generation, and activity scheduling modules.</span>
+                    <span>
+                      Implemented user authentication, group creation, conflict detection, itinerary
+                      generation, and activity scheduling modules.
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-white/30 mt-0.5">•</span>
-                    <span>Applied AI-based preference analysis techniques to improve group travel decision-making with MongoDB backend.</span>
+                    <span>
+                      Applied AI-based preference analysis techniques to improve group travel
+                      decision-making with MongoDB backend.
+                    </span>
                   </li>
                 </ul>
               </div>

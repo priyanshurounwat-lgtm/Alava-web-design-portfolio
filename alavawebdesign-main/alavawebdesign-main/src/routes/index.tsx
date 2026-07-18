@@ -16,9 +16,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Alava Web Designers — Engineering Digital Scale" },
-      { name: "description", content: "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands." },
+      {
+        name: "description",
+        content:
+          "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands.",
+      },
       { property: "og:title", content: "Alava Web Designers — Engineering Digital Scale" },
-      { property: "og:description", content: "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands." },
+      {
+        property: "og:description",
+        content:
+          "Premium UI/UX, radical Framer interactions, and production-grade Webflow deployment for global standard brands.",
+      },
       { property: "og:image", content: "https://www.alavadesign.agency/og-image.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
@@ -40,27 +48,28 @@ export const Route = createFileRoute("/")({
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "ALAVA Web Designers",
-  "url": "https://alavadesign.agency",
-  "logo": "https://alavadesign.agency/founder-avatar.png",
-  "image": "https://alavadesign.agency/og-image.png",
-  "description": "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
-  "address": {
+  name: "ALAVA Web Designers",
+  url: "https://www.alavadesign.agency",
+  logo: "https://www.alavadesign.agency/founder-avatar.png",
+  image: "https://www.alavadesign.agency/og-image.png",
+  description:
+    "ALAVA is a premium web design and development studio based in Vadodara, Gujarat, India. Crafting motion-driven, ultra-fast custom digital experiences.",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Vadodara",
-    "addressRegion": "Gujarat",
-    "addressCountry": "IN"
+    addressLocality: "Vadodara",
+    addressRegion: "Gujarat",
+    addressCountry: "IN",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": "22.307159",
-    "longitude": "73.181220"
+    latitude: "22.307159",
+    longitude: "73.181220",
   },
-  "priceRange": "$$",
-  "sameAs": [
+  priceRange: "$$",
+  sameAs: [
     "https://www.linkedin.com/company/alava-design",
-    "https://www.instagram.com/alavadesign.agency"
-  ]
+    "https://www.instagram.com/alavadesign.agency",
+  ],
 };
 
 function Index() {

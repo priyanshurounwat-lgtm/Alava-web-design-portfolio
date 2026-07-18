@@ -63,13 +63,25 @@ const spring = { type: "spring" as const, stiffness: 120, damping: 18 };
 const hoverSpring = { type: "spring" as const, stiffness: 140, damping: 16 };
 
 const orbitTools = [
-  { label: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  {
+    label: "Figma",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  },
   { label: "Framer", logo: "https://www.vectorlogo.zone/logos/framer/framer-icon.svg" },
   { label: "Shopify", logo: "https://www.vectorlogo.zone/logos/shopify/shopify-icon.svg" },
   { label: "Notion", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" },
-  { label: "Photoshop", logo: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" },
-  { label: "Illustrator", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" },
-  { label: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  {
+    label: "Photoshop",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+  },
+  {
+    label: "Illustrator",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
+  },
+  {
+    label: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
 ];
 
 const tools = [
@@ -219,15 +231,11 @@ function TimelineGrid() {
           transition={{ ...spring, delay: i * 0.04 }}
           className="border border-white/10 bg-white/[0.02] p-3 hover:border-white/30 hover:shadow-[0_0_18px_rgba(255,255,255,0.08)] transition-all"
         >
-          <div className="font-mono text-[9px] tracking-widest text-emerald-400/80 mb-1">
-            {t.q}
-          </div>
+          <div className="font-mono text-[9px] tracking-widest text-emerald-400/80 mb-1">{t.q}</div>
           <div className="font-sans text-xs font-bold uppercase tracking-tight text-white mb-2 leading-tight">
             {t.label}
           </div>
-          <div className="font-mono text-[10px] tracking-wider text-white/40">
-            [ {t.value} ]
-          </div>
+          <div className="font-mono text-[10px] tracking-wider text-white/40">[ {t.value} ]</div>
         </motion.div>
       ))}
     </div>
@@ -246,9 +254,7 @@ function MaintenanceBar() {
           whileHover={{ scale: 1.08, transition: hoverSpring }}
           className="border border-white/10 bg-white/[0.02] px-3 py-3 flex items-center justify-between hover:border-white/40 hover:shadow-[0_0_18px_rgba(255,255,255,0.12)] transition-all"
         >
-          <span className="font-mono text-[10px] tracking-widest text-white/70">
-            [ {t} ]
-          </span>
+          <span className="font-mono text-[10px] tracking-widest text-white/70">[ {t} ]</span>
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
         </motion.div>
       ))}
@@ -269,7 +275,8 @@ export function CraftStack() {
           </div>
 
           <h2 className="font-display font-bold uppercase text-5xl md:text-8xl leading-[0.9] tracking-tight text-white">
-            HOW WE <span className="text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]">WORK</span>
+            HOW WE{" "}
+            <span className="text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]">WORK</span>
           </h2>
         </div>
 

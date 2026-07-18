@@ -8,13 +8,21 @@ export function SiteHeader() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-signal" />
           </span>
           <span className="text-white">ALAVA SYSTEM</span>
-          <span className="hidden md:inline text-white/30">​</span>
+          <span className="hidden md:inline text-white/30">//</span>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-white/50">
-          <a href="#works" className="hover:text-white transition-colors">WORKS</a>
-          <a href="#stack" className="hover:text-white transition-colors">About</a>
-          <a href="#pipeline" className="hover:text-white transition-colors">Services</a>
-          <a href="#brief" className="hover:text-white transition-colors">Contact</a>
+          <a href="#works" className="hover:text-white transition-colors">
+            WORKS
+          </a>
+          <a href="#stack" className="hover:text-white transition-colors">
+            ABOUT
+          </a>
+          <a href="#pipeline" className="hover:text-white transition-colors">
+            SERVICES
+          </a>
+          <a href="#brief" className="hover:text-white transition-colors">
+            CONTACT
+          </a>
         </nav>
         <a
           href="#brief"
@@ -31,4 +39,3 @@ export function SiteHeader() {
     </header>
   );
 }
-

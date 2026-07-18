@@ -230,10 +230,12 @@ export function DesignShowcase() {
         <SectionLabel index="02" label="UI / UX CASE STUDIES" />
         <div className="mt-6 mb-16 flex flex-col items-center text-center gap-6">
           <h2 className="font-display font-bold uppercase text-5xl md:text-8xl leading-[0.9] tracking-tight text-white">
-            UI AND UX <span className="text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]">DESIGN</span>
+            UI AND UX{" "}
+            <span className="text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]">DESIGN</span>
           </h2>
           <p className="max-w-md font-mono uppercase tracking-widest text-xs text-white/50">
-            // FOUR SHIPPED CONCEPTS. EACH WITH PROBLEM, PROCESS, AND PROOF — THE WAY A CASE STUDY SHOULD READ.
+            // FOUR SHIPPED CONCEPTS. EACH WITH PROBLEM, PROCESS, AND PROOF — THE WAY A CASE STUDY
+            SHOULD READ.
           </p>
         </div>
 
@@ -261,9 +263,7 @@ function CaseCard({
   return (
     <article className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
       {/* Image */}
-      <div
-        className={`lg:col-span-7 ${flipped ? "lg:order-2" : "lg:order-1"} group relative`}
-      >
+      <div className={`lg:col-span-7 ${flipped ? "lg:order-2" : "lg:order-1"} group relative`}>
         <button
           onClick={onOpen}
           className="block w-full text-left relative overflow-hidden border border-white/10 bg-white/[0.02] hover:border-white/30 transition-colors"
@@ -373,7 +373,9 @@ function CaseModal({ study, onClose }: { study: CaseStudy; onClose: () => void }
             <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-widest">
               <span className={`px-3 py-1.5 border ${study.accent}`}>{study.category}</span>
               <span className="px-3 py-1.5 border border-white/20 text-white/70">{study.year}</span>
-              <span className="px-3 py-1.5 border border-white/20 text-white/70">{study.client}</span>
+              <span className="px-3 py-1.5 border border-white/20 text-white/70">
+                {study.client}
+              </span>
             </div>
             <h1 className="font-display font-bold text-4xl md:text-7xl uppercase tracking-tight leading-[0.9]">
               {study.title}
@@ -383,11 +385,7 @@ function CaseModal({ study, onClose }: { study: CaseStudy; onClose: () => void }
 
           {/* Hero image — full bleed, contained, NO cropping */}
           <figure className="border border-white/10 bg-white/[0.02] p-4 md:p-8">
-            <img
-              src={study.imageUrl}
-              alt={study.title}
-              className="w-full h-auto block"
-            />
+            <img src={study.imageUrl} alt={study.title} className="w-full h-auto block" />
             <figcaption className="mt-4 font-mono text-[10px] uppercase tracking-widest text-white/40 text-center">
               // FIG.{study.index} — {study.title} · FULL DESIGN
             </figcaption>

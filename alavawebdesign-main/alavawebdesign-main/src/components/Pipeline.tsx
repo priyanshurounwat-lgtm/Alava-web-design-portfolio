@@ -1,10 +1,26 @@
 import { SectionLabel } from "./WorkGallery";
 
 const phases = [
-  { code: "01 // DISCOVERY", title: "Discovery & Research", desc: "We start by understanding your business, goals, audience, and competitors. This helps us create a clear strategy before any design work begins." },
-  { code: "02 // PLANNING", title: "Design & Planning", desc: "Next, we create wireframes and design concepts that define the structure, user experience, and visual direction of the website." },
-  { code: "03 // MOTION", title: "Interactions & Refinement", desc: "We add smooth animations, transitions, and interactive elements that make the website feel engaging without sacrificing usability." },
-  { code: "04 // LAUNCH", title: "Development & Launch", desc: "Finally, we build the website, optimize it for speed and performance, connect any required CMS or integrations, and launch it with full testing and support." },
+  {
+    code: "01 // DISCOVERY",
+    title: "Discovery & Research",
+    desc: "We start by understanding your business, goals, audience, and competitors. This helps us create a clear strategy before any design work begins.",
+  },
+  {
+    code: "02 // PLANNING",
+    title: "Design & Planning",
+    desc: "Next, we create wireframes and design concepts that define the structure, user experience, and visual direction of the website.",
+  },
+  {
+    code: "03 // MOTION",
+    title: "Interactions & Refinement",
+    desc: "We add smooth animations, transitions, and interactive elements that make the website feel engaging without sacrificing usability.",
+  },
+  {
+    code: "04 // LAUNCH",
+    title: "Development & Launch",
+    desc: "Finally, we build the website, optimize it for speed and performance, connect any required CMS or integrations, and launch it with full testing and support.",
+  },
 ];
 
 export function Pipeline() {

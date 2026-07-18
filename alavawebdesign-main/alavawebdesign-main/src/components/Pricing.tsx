@@ -60,7 +60,16 @@ const tiers: PricingTier[] = [
 function CheckIcon() {
   return (
     <div className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/20">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#10b981"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <polyline points="20 6 9 17 4 12"></polyline>
       </svg>
     </div>
@@ -69,10 +78,13 @@ function CheckIcon() {
 
 export function Pricing() {
   return (
-    <section id="pricing" className="relative border-b border-white/10 bg-[#0a0a0c] overflow-hidden">
+    <section
+      id="pricing"
+      className="relative border-b border-white/10 bg-[#0a0a0c] overflow-hidden"
+    >
       {/* Ambient background glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-gradient-to-b from-white/[0.03] to-transparent pointer-events-none rounded-full blur-3xl" />
-      
+
       <div className="relative px-6 md:px-10 py-24 md:py-32 max-w-[1200px] mx-auto z-10">
         <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
           <h2 className="font-sans text-3xl md:text-4xl text-white font-bold tracking-tight mb-4">
@@ -113,14 +125,12 @@ export function Pricing() {
                 >
                   {tier.name}
                 </h3>
-                
+
                 <div className="font-sans font-bold text-3xl text-white mb-2 tracking-tight">
                   {tier.price}
                 </div>
 
-                <div className="text-xs text-slate-400 mb-6">
-                  {tier.delivery}
-                </div>
+                <div className="text-xs text-slate-400 mb-6">{tier.delivery}</div>
 
                 <p className="font-sans text-sm text-slate-400 leading-relaxed">
                   {tier.architecture}

@@ -11,7 +11,8 @@ export function FloatingDock() {
       name: "WhatsApp",
       icon: <MessageCircle size={18} />,
       href: "https://wa.me/919173910955",
-      color: "hover:text-emerald-400 hover:border-emerald-500/50 hover:shadow-[0_0_15px_rgba(52,211,153,0.4)]",
+      color:
+        "hover:text-emerald-400 hover:border-emerald-500/50 hover:shadow-[0_0_15px_rgba(52,211,153,0.4)]",
       bgColor: "bg-emerald-500/10",
       accent: "text-emerald-400",
     },
@@ -20,7 +21,8 @@ export function FloatingDock() {
       name: "Gmail",
       icon: <Mail size={18} />,
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=alavadesigner@gmail.com",
-      color: "hover:text-red-400 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.4)]",
+      color:
+        "hover:text-red-400 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.4)]",
       bgColor: "bg-red-500/10",
       accent: "text-red-400",
     },
@@ -29,7 +31,8 @@ export function FloatingDock() {
       name: "LinkedIn",
       icon: <Linkedin size={18} />,
       href: "https://www.linkedin.com/in/priyanshu-kumar-b10457253",
-      color: "hover:text-blue-400 hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]",
+      color:
+        "hover:text-blue-400 hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]",
       bgColor: "bg-blue-500/10",
       accent: "text-blue-400",
     },
@@ -38,7 +41,8 @@ export function FloatingDock() {
       name: "Instagram",
       icon: <Instagram size={18} />,
       href: "https://www.instagram.com/d.e.s.i.n.r?igsh=MXVtNXR0NDljaXZyNg%3D%3D&utm_source=qr",
-      color: "hover:text-fuchsia-400 hover:border-fuchsia-500/50 hover:shadow-[0_0_15px_rgba(217,70,239,0.4)]",
+      color:
+        "hover:text-fuchsia-400 hover:border-fuchsia-500/50 hover:shadow-[0_0_15px_rgba(217,70,239,0.4)]",
       bgColor: "bg-fuchsia-500/10",
       accent: "text-fuchsia-400",
     },
@@ -78,7 +82,7 @@ export function FloatingDock() {
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/90 border border-white/10 text-white/80 px-3 py-1.5 uppercase tracking-widest text-[9px] pointer-events-none shadow-xl backdrop-blur-sm">
                     {link.name}
                   </span>
-                  
+
                   {/* Anchor link */}
                   <a
                     href={link.href}
@@ -100,8 +104,8 @@ export function FloatingDock() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className={`relative flex h-14 w-14 items-center justify-center rounded-full border bg-black/95 text-white shadow-2xl backdrop-blur-sm transition-all duration-300 ${
-            isOpen 
-              ? "border-red-500/40 hover:border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.25)]" 
+            isOpen
+              ? "border-red-500/40 hover:border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.25)]"
               : "border-white/15 hover:border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.08)]"
           }`}
         >
@@ -114,7 +118,11 @@ export function FloatingDock() {
           )}
 
           <div className="relative h-5 w-5 flex items-center justify-center">
-            {isOpen ? <X size={20} className="text-red-400" /> : <MessageSquare size={20} className="text-white" />}
+            {isOpen ? (
+              <X size={20} className="text-red-400" />
+            ) : (
+              <MessageSquare size={20} className="text-white" />
+            )}
           </div>
         </motion.button>
       </div>
